@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('print') {
+    stage('Init') {
       agent {
         node {
           label ''
@@ -9,7 +9,7 @@ pipeline {
 
       }
       steps {
-        echo 'It is a test.'
+        echo 'test'
       }
     }
 
