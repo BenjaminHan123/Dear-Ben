@@ -9,7 +9,7 @@ pipeline {
 
       }
       steps {
-        echo 'test'
+        sleep(time: 1, unit: 'SECONDS')
       }
     }
 
