@@ -1,7 +1,12 @@
 pipeline {
-  agent none
+  agent {
+    node {
+      label 'master'
+    }
+
+  }
   stages {
-    stage('Init') {
+    stage('Sleep') {
       agent {
         node {
           label 'master'
