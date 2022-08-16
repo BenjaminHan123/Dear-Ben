@@ -1,10 +1,10 @@
 pipeline {
-  agent any
+  agent none
   stages {
     stage('Init') {
       agent {
         node {
-          label ''
+          label 'master'
         }
 
       }
